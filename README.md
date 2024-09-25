@@ -1,6 +1,6 @@
 ## First 6 months checklist
 ### 1. **Python Language Foundations**
-   - [xx ] **Syntax and Basics**: Understand Python syntax, variables, data types, and basic operators.
+   - [ x ] **Syntax and Basics**: Understand Python syntax, variables, data types, and basic operators.
    - [ x ] **Control Flow**: Master if-else statements, loops (`for`, `while`), and exception handling.
    - [ x ] **Functions and Modules**: Learn how to define functions, use `*args` and `**kwargs`, and organize code into modules and packages.
    - [ x ] **Data Structures**: Get comfortable with lists, tuples, dictionaries, sets, and their methods.
