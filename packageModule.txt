@@ -1,0 +1,31 @@
+Python Packages are a way to organize and structure your Python code into reusable components.
+Think of it like a folder that contains related Python files (modules) that work together to provide certain functionality.
+Packages help keep your code organized, make it easier to manage and maintain, and allow you to share your code with others.
+
+How to Create Package in Python?
+Creating packages in Python allows you to organize your code into reusable and manageable modules. Here’s a brief overview of how to create packages:
+
+Create a Directory: Start by creating a directory (folder) for your package. This directory will serve as the root of your package structure.
+Add Modules: Within the package directory, you can add Python files (modules) containing your code. Each module should represent a distinct functionality or component of your package.
+Init File: Include an __init__.py file in the package directory. This file can be empty or can contain an initialization code for your package. It signals to Python that the directory should be treated as a package.
+Subpackages: You can create sub-packages within your package by adding additional directories containing modules, along with their own __init__.py files.
+Importing: To use modules from your package, import them into your Python scripts using dot notation. For example, if you have a module named module1.py inside a package named mypackage, you would import its function like this: from mypackage.module1 import greet.
+
+EXAMPLE:
+1. def greet(name):
+    print(f"Hello, {name}!")
+2. def add(a, b):
+    return a + b
+
+from mypackage import module1, module2
+
+# Using functions from module1
+module1.greet("Alice")
+
+# Using functions from module2
+result = module2.add(3, 5)
+print("The result of addition is:", result)
+
+OUTPUT:
+Hello, Alice!
+The result of addition is: 8
