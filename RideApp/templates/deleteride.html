@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+       <h3 id="delete-ride">Delete a Ride</h3>
+    <form method="POST" action="/rides/delete">
+        <label for="delete_ride_id">Ride ID to Delete:</label>
+        <input type="number" id="delete_ride_id" name="ride_id" required>
+        <br>
+        <button type="submit">Delete Ride</button>
+    </form>
+
+</body>
+</html

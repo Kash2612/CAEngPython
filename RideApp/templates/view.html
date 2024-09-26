@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amusement Park Rides</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Amusement Park Rides</h1>
+    <ul>
+    {% for ride in rides %}
+    <li style="margin-bottom: 0.5rem;">{{ ride.name }} - Price: <strong>${{ ride.price }} </strong> - Min-Age: <strong>${{ ride.age_limit }} </strong> Min-Height: <strong>${{ ride.height_limit}} </strong>cms </li>
+    {% endfor %}
+    </ul>
+
+    <a href="/admin">Go back</a>
+
+
+</body>
+</html>

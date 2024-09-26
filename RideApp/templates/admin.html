@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2>Admin Options</h2>
+    <ul>
+        <li><a href="/admin/rides">View All Rides</a></li>
+        <li><a href="/addride">Add a New Ride</a></li>
+        <li><a href="/updateride">Update Ride Information</a></li>
+        <li><a href="/deleteride">Delete a Ride</a></li>
+    </ul>
+
+    <br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
