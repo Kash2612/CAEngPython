@@ -1,0 +1,15 @@
+Learn to create and manage virtual environments using `venv` or `virtualenv`.
+
+Step1: python3 -m venv --help / python3 -m venv venv
+Step 2: ACTIVATE
+source venv/bin/activate
+
+
+Step 3: Install Packages
+You can now install packages using pip. For example:
+pip install requests
+
+
+Step 4: Deactivate the Virtual Environment
+When you're done working, you can deactivate the environment by simply running:
+deactivate
