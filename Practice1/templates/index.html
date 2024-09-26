@@ -1,0 +1,22 @@
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Home page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1> Home Page!</h1>-->
+<!--&lt;!&ndash;    <p> hello {{fname}} {{lname}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;we can also write python code&ndash;&gt;-->
+<!--{% for x in range(10) %}-->
+<!--    {% if x%2==0  %}-->
+<!--        <p>{{x}}</p>-->
+<!--    {% endif %}-->
+<!--{% endfor %}-->
+<!--</body>-->
+
+<!--</html>-->
+
+<!--we will be extending the base templates here-->
+
+{% extends "base.html" %}
+{% block title %} Home Page  {% endblock %}
+{% block content %} <p>hello! this is the home page</p> {% endblock %}
