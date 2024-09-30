@@ -16,15 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.authtoken.views import obtain_auth_token
-from base.views import home  # Import your home view
+from base.views import StudentApi, LoginApi
+# from base.views import home  # Import your home view
 
 urlpatterns = [
-    path('', home, name='home'),  # Your home view
+    # path('', home, name='home'),  # Your home view
     path('admin/', admin.site.urls),
     path('api/', include('base.urls')),  # Your app's URLs
-    path('api/token-auth/', obtain_auth_token, name='token_auth'), 
-]
 
+    path('student/', StudentApi.as_view()),
+    path('login/',LoginApi.as_view()),
+]
+  
 
 
