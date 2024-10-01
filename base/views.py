@@ -16,6 +16,7 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class StudentListCreateAPIView(generics.ListCreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
 
@@ -27,6 +28,7 @@ class StudentListCreateAPIView(generics.ListCreateAPIView):
 
 
 class StudentRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
     # lookup_field='pk'
@@ -41,6 +43,46 @@ class StudentApi(APIView):
             "status" : True,
             "data": serializer.data
         })
+    
+class StudentByEmailApi(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, email):
+        try:
+            student = Student.objects.get(email=email)
+            serializer = StudentSerializer(student)
+            return Response({
+                "status": True,
+                "data": serializer.data
+            })
+        except Student.DoesNotExist:
+            return Response({
+                "status": False,
+                "message": "Student not found"
+            }, status=status.HTTP_404_NOT_FOUND)
+        
+class StudentsByEnrollmentDateApi(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, date):
+        students = Student.objects.filter(enrolled_date=date)
+        serializer = StudentSerializer(students, many=True)
+        return Response({
+            "status": True,
+            "data": serializer.data
+        })
+
+
+class TotalStudentsApi(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        total_students = Student.objects.count()
+        return Response({
+            "status": True,
+            "total_students": total_students
+        })
+
 
 class LoginApi(APIView):
     def post(self, request):
