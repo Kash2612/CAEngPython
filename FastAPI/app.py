@@ -1,9 +1,11 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
 from database import SessionLocal, Student
+from routers import authentication
 
 app = FastAPI()
 
+app.include_router(authentication.router)
 
 # Dependency to get the SQLAlchemy session
 def get_db():
