@@ -15,19 +15,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-class Student(Base):
-    __tablename__ = "students"
-
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    age = Column(Integer)
-    subject1_name = Column(String)
-    subject1_marks = Column(Integer)
-    subject2_name = Column(String)
-    subject2_marks = Column(Integer)
-    subject3_name = Column(String)
-    subject3_marks = Column(Integer)
-
-# Create the database tables
-Base.metadata.create_all(bind=engine)

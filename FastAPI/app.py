@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
-from database import SessionLocal, Student
+from database import SessionLocal, Base, engine
+from routers.models import Student, User
+
 from routers import authentication
 
 app = FastAPI()
@@ -15,7 +17,7 @@ def get_db():
     finally:
         db.close()
 
-
+Base.metadata.create_all(bind=engine)
 # Create a student with subjects
 @app.post("/students")
 def create_student(
