@@ -20,13 +20,13 @@
    - [ ] **Testing**: Write unit tests using `unittest` and `pytest`.
 
 ### 4. **Web Development with Python**
-   - [ ] **Flask/Django**: Learn a web framework like Flask (for lightweight projects) or Django (for full-featured applications).
-   - [ ] **APIs**: Build and consume RESTful APIs using Flask-RESTful, Django REST framework, or FastAPI.
-   - [ ] **ORMs**: Learn to use Object-Relational Mappers (ORMs) like SQLAlchemy or Django ORM to interact with databases.
-   - [ ] **Templating**: Use Jinja2 or Django templates to render HTML.
+   - [x] **Flask/Django**: Learn a web framework like Flask (for lightweight projects) or Django (for full-featured applications).
+   - [x] **APIs**: Build and consume RESTful APIs using Flask-RESTful, Django REST framework, or FastAPI.
+   - [x] **ORMs**: Learn to use Object-Relational Mappers (ORMs) like SQLAlchemy or Django ORM to interact with databases.
+   - [x] **Templating**: Use Jinja2 or Django templates to render HTML.
 
 ### 5. **Data Handling and Analysis**
-   - [ ] **Database Interaction**: Use SQLite, PostgreSQL, or MySQL with Python, and learn how to interact with them using libraries like `sqlite3` or `SQLAlchemy`.
+   - [x] **Database Interaction**: Use SQLite, PostgreSQL, or MySQL with Python, and learn how to interact with them using libraries like `sqlite3` or `SQLAlchemy`.
    - [ ] **Pandas**: Get proficient with Pandas for data manipulation and analysis.
    - [ ] **NumPy**: Learn NumPy for numerical operations and array manipulations.
    - [ ] **Data Visualization**: Create visualizations using Matplotlib, or Plotly.
@@ -37,9 +37,9 @@
    - [ ] **Command Line Tools**: Create command-line scripts using `argparse` or `click`.
 
 ### 7. **Working with APIs**
-   - [ ] **HTTP Requests**: Use the `requests` library to send HTTP requests and interact with web services.
-   - [ ] **JSON Handling**: Learn to parse and manipulate JSON data.
-   - [ ] **OAuth and Authentication**: Understand how to use OAuth for API authentication.
+   - [x] **HTTP Requests**: Use the `requests` library to send HTTP requests and interact with web services.
+   - [x] **JSON Handling**: Learn to parse and manipulate JSON data.
+   - [x] **OAuth and Authentication**: Understand how to use OAuth for API authentication.
 
 ### 8. **Concurrency and Parallelism**
    - [ ] **Multithreading**: Learn to use `threading` for running code concurrently.
@@ -47,9 +47,9 @@
    - [ ] **Asyncio**: Understand asynchronous programming using `asyncio`.
 
 ### 9. **Cloud and DevOps with Python**
-   - [ ] **AWS SDK (Boto3)**: Learn to interact with AWS services using Boto3.
-   - [ ] **Docker**: Write Dockerfiles to containerize your Python applications.
-   - [ ] **CI/CD**: Set up Continuous Integration/Continuous Deployment pipelines using tools like Jenkins, GitHub Actions, or Travis CI.
+   - [x] **AWS SDK (Boto3)**: Learn to interact with AWS services using Boto3.
+   - [x] **Docker**: Write Dockerfiles to containerize your Python applications.
+   - [x] **CI/CD**: Set up Continuous Integration/Continuous Deployment pipelines using tools like Jenkins, GitHub Actions, or Travis CI.
 
 ### 10. **Security in Python**
    - [ ] **Secure Coding Practices**: Understand how to write secure Python code, handle sensitive data, and avoid common vulnerabilities.
